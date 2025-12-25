@@ -1,0 +1,54 @@
+Skip to content
+Chat history
+
+
+You said:
+odd and even number html code
+ChatGPT said:
+Here’s a simple HTML page that lets a user enter a number and tells whether it’s odd or even:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Odd or Even Checker</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    input, button { font-size: 1rem; padding: 6px 10px; }
+  </style>
+</head>
+<body>
+  <h2>Odd or Even Number Checker</h2>
+
+  <input type="number" id="num" placeholder="Enter a number" />
+  <button onclick="checkNumber()">Check</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkNumber() {
+      const value = document.getElementById("num").value;
+      const number = Number(value);
+      const result = document.getElementById("result");
+
+      if (value === "") {
+        result.textContent = "Please enter a number.";
+        return;
+      }
+
+      if (number % 2 === 0) {
+        result.textContent = number + " is an EVEN number.";
+      } else {
+        result.textContent = number + " is an ODD number.";
+      }
+    }
+  </script>
+</body>
+</html>
+If you want it in another style (e.g., without JavaScript, or as a form that submits), tell me what you prefer 🙂
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
